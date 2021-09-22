@@ -1,0 +1,4 @@
+Run `get.py` to download the logos.
+
+Currently we only have logos from cryptocurrencies which we also have
+pricing data. That is, those available on cryptodatadownload.com/data/binance.
