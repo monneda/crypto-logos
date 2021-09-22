@@ -22,9 +22,10 @@ def download(coin: str):
 
 if __name__ == '__main__':
     total = len(COINS)
+    longest_name = max(COINS, key=len)
     for i, coin in enumerate(COINS):
         remaining = total - i
-        alignment = ' ' * (5 - len(coin))  # longest name is 5 chars long :p
+        alignment = ' ' * (len(longest_name) - len(coin))  # >.<
         print(f'Downloading {coin} {alignment} ({remaining}/{total})')
         download(coin)
 
